@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBDEB59F-9AEC-4D2F-8BB3-059120922E8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Metal_Warriors</RootNamespace>
+    <AssemblyName>Metal Warriors</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ganador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ganador.Designer.cs">
+      <DependentUpon>Ganador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perdedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perdedor.Designer.cs">
+      <DependentUpon>Perdedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Posicionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Posicionar.Designer.cs">
+      <DependentUpon>Posicionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Selección.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selección.Designer.cs">
+      <DependentUpon>Selección.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ganador.resx">
+      <DependentUpon>Ganador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perdedor.resx">
+      <DependentUpon>Perdedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posicionar.resx">
+      <DependentUpon>Posicionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selección.resx">
+      <DependentUpon>Selección.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IniciarBoton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcercaDeBoton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalirBoton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regresarBoton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContinuarBoton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ballistic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nitro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prometheus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Havoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeleccionTitulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BallisticSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DracheSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HavocSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NitroSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrometheusSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpiderSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PosicionTitulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tablero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BallisticDañado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BallisticDestruido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BallisticPosicionado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DracheDañado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DracheDestruido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrachePosicionado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HavocDañado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HavocDestruido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HavocPosicionado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NitroDañado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NitroDestruido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NitroPosicionado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PromeheusDañado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrometheusDestruido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrometheusPosicionado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpiderDañado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpiderDestruido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpiderPosicionado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RotarBoton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComenzarBoton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BallisticLocal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BallisticVisitante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DracheLocal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DracheVisitatne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HavocLocal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HavocVisitante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NitroLuchaLocal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NitroLuchaVisitante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrometheusLocal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrometheusVisitante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpiderLocal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpiderVisitante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dañado.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dañado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Destruido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Failure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dañado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesarrolladoPor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nombre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VerjuegoBoton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ganador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perdedor.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
